@@ -10,7 +10,7 @@ from keep_alive import keep_alive
 keep_alive()
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('6761128167:AAGjtCm56qcnfkQLLsDM2KiSexbJRcxKLy8')
+bot = telebot.TeleBot('7062443890:AAHnOImxQ1hw1PGanFNtGc1rgg7EAus5bWc')
 # Admin user IDs
 admin_id = {"5430569954"}
 
@@ -397,4 +397,4 @@ if __name__ == "__main__":
         except Exception as e:
             print(e)
             # Add a small delay to avoid rapid looping in case of persistent errors
-            time.sleep(15)
+            time.sleep(10)
