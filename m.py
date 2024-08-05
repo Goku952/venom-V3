@@ -10,9 +10,9 @@ from keep_alive import keep_alive
 keep_alive()
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('TOKEM')
+bot = telebot.TeleBot('6761128167:AAGjtCm56qcnfkQLLsDM2KiSexbJRcxKLy8')
 # Admin user IDs
-admin_id = {"5588464519"}
+admin_id = {"5430569954"}
 
 # Files for data storage
 USER_FILE = "users.json"
@@ -186,7 +186,7 @@ def handle_bgmi(message):
             try:
                 port = int(command[2])
                 time = int(command[3])
-                if time > 300:
+                if time > 600:
                     response = "⚠️𝐄𝐑𝐑𝐎𝐑:170 𝐒𝐄 𝐓𝐇𝐎𝐃𝐀 𝐊𝐀𝐌 𝐓𝐈𝐌𝐄 𝐃𝐀𝐀𝐋 𝐆𝐀𝐍𝐃𝐔."
                 else: 
                     record_command_logs(user_id, '/bgmi', target, port, time)
