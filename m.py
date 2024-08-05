@@ -117,7 +117,7 @@ def generate_key_command(message):
             except ValueError:
                 response = "𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐩𝐞𝐜𝐢𝐟𝐲 𝐀 𝐕𝐚𝐥𝐢𝐝 𝐍𝐮𝐦𝐛𝐞𝐫 𝐚𝐧𝐝 𝐮𝐧𝐢𝐭 𝐨𝐟 𝐓𝐢𝐦𝐞 (hours/days)."
         else:
-            response = "𝐔𝐬𝐚𝐠𝐞: /genkey <amount> <hours/days>"
+            response = "𝐔𝐬𝐚𝐠𝐞: /genkey <User ID> <hours/days>"
     else:
         response = "𝐎𝐧𝐥𝐲 𝐏𝐚𝐩𝐚 𝐎𝐟 𝐛𝐨𝐭 𝐜𝐚𝐧 𝐝𝐨 𝐭𝐡𝐢𝐬"
 
@@ -281,7 +281,7 @@ def show_command_logs(message):
 
     bot.reply_to(message, response)
 
-@bot.message_handler(commands=['help'])
+@bot.message_handler(commands=['Gand marvale'])
 def show_help(message):
     help_text = '''𝐌𝐄𝐑𝐀 𝐋𝐀𝐍𝐃 𝐊𝐀𝐑𝐄 𝐇𝐄𝐋𝐏 𝐓𝐄𝐑𝐈 𝐋𝐄 𝐅𝐈𝐑 𝐁𝐇𝐈 𝐁𝐀𝐓𝐀 𝐃𝐄𝐓𝐀:
 💥 /bgmi 𝐁𝐆𝐌𝐈 𝐊𝐄 𝐒𝐄𝐑𝐕𝐄𝐑 𝐊𝐈 𝐂𝐇𝐔𝐃𝐀𝐘𝐈.
@@ -291,7 +291,7 @@ def show_help(message):
 💥 /redeem <key>: 𝐊𝐞𝐲 𝐑𝐞𝐝𝐞𝐞𝐦 𝐰𝐚𝐥𝐚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝.
 
 🤖 Admin commands:
-💥 /genkey <amount> <hours/days>: 𝐓𝐎 𝐌𝐀𝐊𝐄 𝐊𝐄𝐘.
+💥 /genkey <User ID> <hours/days>: 𝐓𝐎 𝐌𝐀𝐊𝐄 𝐊𝐄𝐘.
 💥 /allusers: 𝐋𝐢𝐒𝐓 𝐎𝐅 𝐂𝐇𝐔𝐓𝐘𝐀 𝐔𝐒𝐄𝐑𝐒.
 💥 /logs: 𝐀𝐀𝐏𝐊𝐄 𝐊𝐀𝐑𝐓𝐎𝐎𝐓𝐄 𝐉𝐀𝐍𝐍𝐄 𝐖𝐀𝐋𝐀 𝐂𝐎𝐌𝐌𝐀𝐍𝐃.
 💥 /clearlogs: 𝐅𝐔𝐂𝐊 𝐓𝐇𝐄 𝐋𝐎𝐆 𝐅𝐈𝐋𝐄.
@@ -361,7 +361,7 @@ def remove_user(message):
                 save_users()
                 response = f"𝐔𝐬𝐞𝐫 {target_user_id} 𝐒𝐮𝐜𝐜𝐞𝐬𝐟𝐮𝐥𝐥𝐲 𝐅𝐮𝐂𝐤𝐞𝐃."
             else:
-                response = "𝐋𝐎𝐋 𝐮𝐬𝐞𝐫 𝐧𝐨𝐭 𝐟𝐨𝐮𝐧𝐝😂"
+                response = "𝐋and is 𝐧𝐨𝐭 𝐟𝐨𝐮𝐧𝐝😂"
         else:
             response = "Usage: /remove <user_id>"
     else:
